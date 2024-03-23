@@ -15,7 +15,7 @@ public class EmployeeController {
 	
 	@Autowired
 	private EmployeeService empService;
-	@Getmapping("/hello")
+	@GetMapping("/hello")
 	public String hello(){
 		return "hi this is my first app";
 	}
