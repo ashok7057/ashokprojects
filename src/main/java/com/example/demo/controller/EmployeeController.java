@@ -15,6 +15,10 @@ public class EmployeeController {
 	
 	@Autowired
 	private EmployeeService empService;
+	@Getmapping("/hello")
+	public String hello(){
+		return "hi this is my first app";
+	}
 	@PostMapping("/addEmployee")
 	public Employee addEmployee(@RequestBody Employee emp) 
 	{
